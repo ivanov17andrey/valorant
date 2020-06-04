@@ -1,0 +1,41 @@
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+@import "fonts";
+@import "mixins";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/animate.css/animate";
+
+$white: #fff;
+$black: #1f2326;
+$red: #ff4656;
+$grey: #c4c4c4;
+
+:active,
+:hover,
+:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-family: Druk;
+	font-weight: 400;
+	color: #fff;
+	background: linear-gradient(135deg, $red, $black);
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+}
+a {
+	color: $white;
+	&:hover {
+		color: $red;
+		text-decoration: none;
+	}
+}
+

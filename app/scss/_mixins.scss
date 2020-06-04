@@ -1,0 +1,19 @@
+@mixin dropdown-element($pr) {
+	&::after {
+		content: "";
+		position: absolute;
+		right: $pr;
+		top: calc(50% - 2px);
+		border: 2px solid transparent;
+		border-top: 2px solid $white;
+	}
+}
+
+@mixin cut-angle {
+	clip-path: polygon(7px 0, 100% 0, 100% 100%, 0 100%, 0 7px);
+}
+
+@mixin transparent-text {
+	color: transparent;
+	-webkit-text-stroke: 1px $white;
+}
